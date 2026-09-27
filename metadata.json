@@ -1,0 +1,6 @@
+{
+  "name": "CraftCopy",
+  "description": "AI-powered marketing assistant and pricing advisor for local craftsmen and small business owners, supporting SDG 9.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
