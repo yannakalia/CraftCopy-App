@@ -5,8 +5,6 @@ import {
   MapPin, 
   FileText, 
   DollarSign, 
-  Instagram, 
-  Globe, 
   Sparkles, 
   Check, 
   X, 
@@ -205,48 +203,7 @@ export const BasicInfoModal: React.FC<BasicInfoModalProps> = ({
             />
           </div>
 
-          {/* Row 4: Social Handles */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            <div>
-              <label className="block text-xs font-semibold text-[#6F5B4B] mb-1">
-                Instagram Handle
-              </label>
-              <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-[#8A7969]">
-                  <Instagram className="w-4 h-4" />
-                </span>
-                <input
-                  type="text"
-                  id="profile-instagram"
-                  placeholder="@yourstudiocraft"
-                  value={formData.instagramHandle}
-                  onChange={(e) => handleChange('instagramHandle', e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 rounded-xl border border-[#D5C7B6] bg-white text-[#423023] text-sm focus:outline-none focus:ring-2 focus:ring-[#4E654E]"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-xs font-semibold text-[#6F5B4B] mb-1">
-                Shop / Website URL
-              </label>
-              <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-[#8A7969]">
-                  <Globe className="w-4 h-4" />
-                </span>
-                <input
-                  type="text"
-                  id="profile-website"
-                  placeholder="e.g. yourstudio.etsy.com"
-                  value={formData.websiteUrl}
-                  onChange={(e) => handleChange('websiteUrl', e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 rounded-xl border border-[#D5C7B6] bg-white text-[#423023] text-sm focus:outline-none focus:ring-2 focus:ring-[#4E654E]"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Row 5: Pricing Defaults (SDG 9 Living Wage) */}
+          {/* Row 4: Pricing Defaults (SDG 9 Living Wage) */}
           <div className="p-4 rounded-2xl bg-[#F6EFE3] border border-[#DECFB8] space-y-3">
             <div className="flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-[#C59B3C]" />
